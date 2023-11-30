@@ -1,0 +1,340 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: "Lato Regular", "Lato Light";
+    vertical-align: baseline;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{box-sizing: border-box;}
+
+.contenedor {
+    background-image: url("material/back/deg2000.jpg");
+    background-size: 100% auto;
+    margin-left: 0%;
+}
+.nav {
+	position: static;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 3px;
+    padding-left: 10%;
+    padding-right: 10%;
+    box-shadow: 0px 2px #7F479626;
+    border-bottom-width: thin;
+        }
+ul {
+	position: static;
+	padding-top: 10px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+        }
+li {position: static;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+@keyframes girar{
+	from{
+		transform: rotate(0);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+.logocentral {             
+	display: flex;
+	justify-content: center;
+	animation: girar 15s 2 linear;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+.footer {
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 30px;
+    position: relative;
+    clear: both;
+}
+.black {  
+	color: #000000;
+}
+.nav1 {position: static;
+    float: left;
+	padding-top: 20px;
+}
+.nav2 {position: static;
+	padding-top: 20px;
+	float: right;
+}
+h1{
+	display: inline-block;
+    font-family: 'Lato', sans-serif;
+    font-size: 80px;
+}
+
+h2{
+    font-family: 'Roboto mono', sans-serif;
+    font-size: small;
+    text-decoration: none;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+h3{
+    font-family: 'Roboto mono', sans-serif;
+    font-size: x-large;
+    text-transform: uppercase;
+    font-style: normal;
+    text-align: right;
+    list-style-position: inside;
+}
+h4{
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: right;
+}
+h5{
+    font-family: 'Roboto mono', sans-serif;
+    font-size: large;
+    text-transform: uppercase;
+    font-style: normal;
+    text-align: left;
+    list-style-position: inside;
+}
+.bio {
+    max-height: 500px;
+    overflow: scroll;
+    text-align: justify;
+    margin-right: 30px;
+    margin-top: 0px;
+    display: block;
+    font-family: "Lato Regular", "Lato Light";
+}
+p{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: justify;
+}
+
+#about {
+    max-height: 650px;
+    float: left;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    clear: left;
+    display: flex
+}
+h4{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+.TITULOS {
+	display: flex;
+    margin: 30px;
+}
+header{
+    position: static;	
+}
+
+.galery{
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.image{
+	min-width: 20%;
+	height: 273px;
+	position: relative;
+}
+
+.image img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center center;
+}
+
+.image:hover .opacity-hover{
+	width: 100%;
+}
+
+.caption{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	transform: translateY(300px);
+	transition: transform 100ms linear;
+}
+
+.opacity-hover:hover .caption{
+	transform: translateY(0px);
+}
+
+.caption p{
+	color: whitesmoke;
+	width: 80%;
+}
+
+.opacity-hover{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	transition: backgroun-color 300ms linear;
+}
+
+.opacity-hover:hover{
+	background-color: rgba(2,2,2,0.8);
+}
+
+@media screen and (max-width: 900px){
+	.bio,
+	#about{width: 100%; float: none}
+	.nav{display: none}
+    .menu {
+        display: list-item;
+    }
+}
+
+.bloque01 {
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+    border-width: 30px;
+}
+a {
+    text-decoration: none;
+    color: #000000;
+}
+.vertical-text {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 24px;
+    margin-right: 20px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3 fr,1 fr);
+    grid-gap: 20px;
+    
+}
+
+.section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.section img {
+    max-width: 100%;
+}
+.footer {
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 30px;
+    position: relative;
+    clear: both;
+}
+.black {  
+	color: #000000;
+}
+    /* Estilos para el menú de hamburguesa */
+    .hamburger-menu {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .hamburger-icon {
+        background-color: black;
+        width: 30px;
+        height: 3px;
+        margin: 3px 0;
+    }
+
+    @media screen and (max-width: 800px) {
+        .menu {
+            display: none;
+        }
+
+        .hamburger-menu {
+            display: flex;
+        }
+
+        .navbar.open {
+            background-color: rgb(0, 0, 0);
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 10px;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+        }
+
+        .menu.open {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .content {
+        display: flex;
+        align-items: flex-start;
+    }
