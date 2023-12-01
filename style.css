@@ -33,23 +33,6 @@ body {
 ol, ul {
 	list-style: none;
 }
-h1{
-    font-family: 'Lato', sans-serif;
-    font-weight: 900;
-    font-size: 104px;
-}
-
-h2{
-    font-family: 'Roboto Mono', monospace;
-    font-size: small;
-    text-decoration: none;
-    padding: 30px;
-    margin-left: 30px;
-}
-h4{
-    text-decoration: underline;
-}
-
 
 .navbar {
     display: flex;
@@ -129,7 +112,8 @@ h4{
     color: #FFFFFF;
     text-align: center;
     font-family: 'Lato', sans-serif;
-    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
     margin-top: 30px;
     position: relative;
     clear: both;
