@@ -135,7 +135,7 @@ ol, ul {
         margin: 3px 0;
     }
 
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 900px) {
         .contenedor {
             background-image: url("material/back/deg800.jpg");
             background-size: 100% auto;

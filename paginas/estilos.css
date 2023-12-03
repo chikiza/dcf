@@ -1,149 +1,222 @@
 @charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+v2.0 | 20110126
+License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
     padding: 0;
     border: 0;
     font-size: 100%;
     font: "Lato Regular", "Lato Light";
     vertical-align: baseline;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
-*{box-sizing: border-box;}
-
-.contenedor {
-    background-image: url("material/back/deg2000.jpg");
-    background-size: 100% auto;
-    margin-left: 0%;
+* {
+    box-sizing: border-box;
 }
+
 .nav {
-	position: static;
+    position: static;
     color: #FFFFFF;
     text-align: center;
     font-family: 'Lato', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    padding-top: 3px;
+    font-weight: 700;
+    padding-top: 5px;
     padding-left: 10%;
     padding-right: 10%;
     box-shadow: 0px 2px #7F479626;
     border-bottom-width: thin;
-        }
+}
+
 ul {
-	position: static;
-	padding-top: 10px;
+    position: static;
+    padding-top: 10px;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-        }
-li {position: static;
-        }
-
-        li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-@keyframes girar{
-	from{
-		transform: rotate(0);
-	}
-	to{
-		transform: rotate(360deg);
-	}
 }
-.logocentral {             
-	display: flex;
-	justify-content: center;
-	animation: girar 15s 2 linear;
-    padding-top: 30px;
-    padding-bottom: 30px;
 
+li {
+    position: static;
 }
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
 .footer {
     color: #FFFFFF;
     text-align: center;
     font-family: 'Lato', sans-serif;
-    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
     margin-top: 30px;
     position: relative;
     clear: both;
 }
-.black {  
-	color: #000000;
-}
-.nav1 {position: static;
-    float: left;
-	padding-top: 20px;
-}
-.nav2 {position: static;
-	padding-top: 20px;
-	float: right;
-}
-h1{
-	display: inline-block;
-    font-family: 'Lato', sans-serif;
-    font-size: 80px;
+
+.black {
+    color: #000000;
 }
 
-h2{
+.nav1 {
+    position: static;
+    float: left;
+    padding-top: 35px;
+}
+
+.nav2 {
+    position: static;
+    padding-top: 35px;
+    float: right;
+}
+
+h1 {
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+    font-size: 104px;
+}
+
+h2 {
     font-family: 'Roboto mono', sans-serif;
-    font-size: small;
+    font-size: 16px;
+    font-weight: 400;
     text-decoration: none;
     padding-top: 30px;
     padding-left: 30px;
 }
-h3{
+
+h3 {
     font-family: 'Roboto mono', sans-serif;
-    font-size: x-large;
+    font-size: 24px;
+    font-weight: 700;
     text-transform: uppercase;
     font-style: normal;
     text-align: right;
     list-style-position: inside;
 }
-h4{
+
+h4 {
     font-family: 'Lato', sans-serif;
     text-transform: uppercase;
     text-decoration: underline;
     text-align: right;
 }
-h5{
+
+h5 {
     font-family: 'Roboto mono', sans-serif;
     font-size: large;
     text-transform: uppercase;
@@ -151,6 +224,7 @@ h5{
     text-align: left;
     list-style-position: inside;
 }
+
 .bio {
     max-height: 500px;
     overflow: scroll;
@@ -158,10 +232,10 @@ h5{
     margin-right: 30px;
     margin-top: 0px;
     display: block;
-    font-family: "Lato Regular", "Lato Light";
 }
-p{
+p {
     font-family: 'Lato', sans-serif;
+    font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     text-align: justify;
@@ -175,75 +249,86 @@ p{
     clear: left;
     display: flex
 }
-h4{
+
+h4 {
     font-family: 'Lato', sans-serif;
     text-align: center;
 }
+
 .TITULOS {
-	display: flex;
+    display: flex;
     margin: 30px;
 }
-header{
-    position: static;	
+
+header {
+    position: static;
 }
 
-.galery{
-	display: flex;
-	flex-wrap: nowrap;
+.galery {
+    display: flex;
+    flex-wrap: nowrap;
 }
 
-.image{
-	min-width: 20%;
-	height: 273px;
-	position: relative;
+.image {
+    min-width: 20%;
+    height: 273px;
+    position: relative;
 }
 
-.image img{
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	object-position: center center;
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
 }
 
-.image:hover .opacity-hover{
-	width: 100%;
+.image:hover .opacity-hover {
+    width: 100%;
 }
 
-.caption{
-	width: 100%;
-	height: 100%;
-	display: flex;
-	align-items: center;
-	text-align: center;
-	transform: translateY(300px);
-	transition: transform 100ms linear;
+.caption {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    transform: translateY(300px);
+    transition: transform 100ms linear;
 }
 
-.opacity-hover:hover .caption{
-	transform: translateY(0px);
+.opacity-hover:hover .caption {
+    transform: translateY(0px);
 }
 
-.caption p{
-	color: whitesmoke;
-	width: 80%;
+.caption p {
+    color: whitesmoke;
+    width: 80%;
 }
 
-.opacity-hover{
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	transition: backgroun-color 300ms linear;
+.opacity-hover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition: backgroun-color 300ms linear;
 }
 
-.opacity-hover:hover{
-	background-color: rgba(2,2,2,0.8);
+.opacity-hover:hover {
+    background-color: rgba(2, 2, 2, 0.8);
 }
 
-@media screen and (max-width: 900px){
-	.bio,
-	#about{width: 100%; float: none}
-	.nav{display: none}
+@media screen and (max-width: 900px) {
+
+    .bio,
+    #about {
+        width: 100%;
+        float: none
+    }
+
+    .nav {
+        display: list-item;
+    }
+
     .menu {
         display: list-item;
     }
@@ -255,21 +340,24 @@ header{
     object-fit: cover;
     border-width: 30px;
 }
+
 a {
     text-decoration: none;
     color: #000000;
 }
+
 .vertical-text {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     font-size: 24px;
     margin-right: 20px;
 }
+
 .grid {
     display: grid;
-    grid-template-columns: repeat(3 fr,1 fr);
+    grid-template-columns: repeat(3 fr, 1 fr);
     grid-gap: 20px;
-    
+
 }
 
 .section {
@@ -281,6 +369,7 @@ a {
 .section img {
     max-width: 100%;
 }
+
 .footer {
     color: #FFFFFF;
     text-align: center;
@@ -290,51 +379,54 @@ a {
     position: relative;
     clear: both;
 }
-.black {  
-	color: #000000;
+
+.black {
+    color: #000000;
 }
-    /* Estilos para el menú de hamburguesa */
-    .hamburger-menu {
+
+/* Estilos para el menú de hamburguesa */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger-icon {
+    background-color: black;
+    width: 30px;
+    height: 3px;
+    margin: 3px 0;
+}
+
+@media screen and (max-width: 800px) {
+    .menu {
         display: none;
-        flex-direction: column;
-        cursor: pointer;
     }
 
-    .hamburger-icon {
-        background-color: black;
-        width: 30px;
-        height: 3px;
-        margin: 3px 0;
-    }
-
-    @media screen and (max-width: 800px) {
-        .menu {
-            display: none;
-        }
-
-        .hamburger-menu {
-            display: flex;
-        }
-
-        .navbar.open {
-            background-color: rgb(0, 0, 0);
-            flex-direction: column;
-            align-items: flex-start;
-            padding: 10px;
-            position: absolute;
-            top: 60px;
-            left: 0;
-            z-index: 1;
-            width: 100%;
-        }
-
-        .menu.open {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-    }
-    .content {
+    .hamburger-menu {
         display: flex;
-        align-items: flex-start;
     }
+
+    .navbar.open {
+        background-color: rgb(0, 0, 0);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+    }
+
+    .menu.open {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+}
