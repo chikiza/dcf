@@ -429,4 +429,21 @@ a {
 .content {
     display: flex;
     align-items: flex-start;
+    
+}
+
+/* Estilos para el carrusel */
+.swiper {
+    width: 600px;
+    height: 600px;
+    display: flex; /* Utilizamos flexbox para centrar vertical y horizontalmente */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    border: 1px solid #ccc; /* Añade un borde para visualizar el contenedor */
+}
+
+.swiper img {
+    max-width: 100%; /* Para asegurarse de que la imagen no exceda el tamaño del contenedor */
+    max-height: 100%; /* Para asegurarse de que la imagen no exceda el tamaño del contenedor */
+    display: block; /* Asegura que la imagen se comporte correctamente */
 }
