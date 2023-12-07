@@ -1,9 +1,7 @@
-@charset "UTF-8";
-/* http://meyerweb.com/eric/tools/css/reset/ 
+43@charset "UTF-8";
+http://meyerweb.com/eric/tools/css/reset/ 
 v2.0 | 20110126
 License: none (public domain)
-*/
-
 html,
 body,
 div,
@@ -90,7 +88,7 @@ video {
     font-size: 100%;
     font: "Lato Regular", "Lato Light";
     vertical-align: baseline;
-}
+} 
 
 body {
     line-height: 1;
@@ -318,7 +316,6 @@ header {
 }
 
 @media screen and (max-width: 900px) {
-
     .bio,
     #about {
         width: 100%;
@@ -351,14 +348,15 @@ a {
     transform: rotate(180deg);
     font-size: 24px;
     margin-right: 20px;
+    text-align: end;
 }
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(3 fr, 1 fr);
+    grid-template-columns: repeat(3, 1fr); /* Corrección en la definición de columnas */
     grid-gap: 20px;
-
 }
+
 
 .section {
     background-color: #f9f9f9;
@@ -428,9 +426,9 @@ a {
 
 .content {
     display: flex;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     
-}
+} 
 
 /* Estilos para el carrusel */
 .swiper {
