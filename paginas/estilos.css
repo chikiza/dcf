@@ -1,124 +1,4 @@
-43@charset "UTF-8";
-http://meyerweb.com/eric/tools/css/reset/ 
-v2.0 | 20110126
-License: none (public domain)
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: "Lato Regular", "Lato Light";
-    vertical-align: baseline;
-} 
-
-body {
-    line-height: 1;
-}
-
-ol,
-ul {
-    list-style: none;
-}
-
-blockquote,
-q {
-    quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-* {
-    box-sizing: border-box;
+* { box-sizing: border-box;
 }
 
 .nav {
@@ -141,10 +21,6 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-}
-
-li {
-    position: static;
 }
 
 li a {
@@ -260,59 +136,6 @@ h4 {
 
 header {
     position: static;
-}
-
-.galery {
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-.image {
-    min-width: 20%;
-    height: 273px;
-    position: relative;
-}
-
-.image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center center;
-}
-
-.image:hover .opacity-hover {
-    width: 100%;
-}
-
-.caption {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    transform: translateY(300px);
-    transition: transform 100ms linear;
-}
-
-.opacity-hover:hover .caption {
-    transform: translateY(0px);
-}
-
-.caption p {
-    color: whitesmoke;
-    width: 80%;
-}
-
-.opacity-hover {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    transition: backgroun-color 300ms linear;
-}
-
-.opacity-hover:hover {
-    background-color: rgba(2, 2, 2, 0.8);
 }
 
 @media screen and (max-width: 900px) {
@@ -432,8 +255,8 @@ a {
 
 /* Estilos para el carrusel */
 .swiper {
-    width: 600px;
-    height: 600px;
+    max-width: 600px;
+    max-height: 600px;
     display: flex; /* Utilizamos flexbox para centrar vertical y horizontalmente */
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente */
