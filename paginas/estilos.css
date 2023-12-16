@@ -35,8 +35,9 @@ li a {
     color: #FFFFFF;
     text-align: center;
     font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    margin-top: 30px;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 50px;
     position: relative;
     clear: both;
 }
@@ -113,7 +114,7 @@ h6 {
     overflow: scroll;
     text-align: justify;
     margin-right: 30px;
-    margin-top: 0px;
+    margin-top: 45px;
     display: block;
 }
 .imgbio {
@@ -132,6 +133,7 @@ p {
     float: left;
     margin-right: 40px;
     margin-bottom: 10px;
+    padding-top: 30px;
     clear: left;
     display: flex
 }
@@ -298,23 +300,10 @@ a {
     }
     button {
         appearance: auto;
-        font-style: ;
-        font-variant-ligatures: ;
-        font-variant-caps: ;
-        font-variant-numeric: ;
-        font-variant-east-asian: ;
-        font-variant-alternates: ;
-        font-variant-position: ;
-        font-weight: ;
-        font-stretch: ;
-        font-size: ;
-        font-family: ;
-        font-optical-sizing: ;
-        font-kerning: ;
-        font-feature-settings: ;
-        font-variation-settings: ;
-        text-rendering: auto;
-        color: buttontext;
+        font-weight: 500px;
+        font-size: 24px;
+        font-family: 'Lato', sans-serif;
+        color: white;
         letter-spacing: normal;
         word-spacing: normal;
         line-height: normal;
@@ -326,13 +315,19 @@ a {
         align-items: flex-start;
         cursor: default;
         box-sizing: border-box;
-        background-color: buttonface;
+        background-color: 
+        #E57389;
         margin: 0em;
-        padding-block: 1px;
-        padding-inline: 15px;
-        border-width: 2px;
-        border-style: outset;
-        border-color: buttonborder;
-        border-image: initial;
-    }
+        padding: 10px 15px; /* Ajusta el relleno según sea necesario */
 
+        border-radius: 10px; /* Bordes redondeados */
+    }
+      /* Cambio de color al estar activo */
+    button:active {
+        background-color: #643777; /* Cambia el color al hacer clic */
+    }
+    .descarga {
+        display: flex;
+        justify-content: center;
+      }
+      
