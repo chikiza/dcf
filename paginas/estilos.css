@@ -192,6 +192,7 @@ a {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Corrección en la definición de columnas */
     grid-gap: 20px;
+    margin-left: -80px;
 }
 
 
@@ -262,7 +263,10 @@ a {
 .content {
     display: flex;
     /* align-items: flex-start; */
-    
+} 
+.contentgrid {
+    display: flex;
+    margin-top: 50px;
 } 
 
 /* Estilos para el carrusel */

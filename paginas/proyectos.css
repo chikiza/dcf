@@ -15,11 +15,19 @@ h3 {
     text-align: start;
     margin-left: 10%;
     margin-right: 10%;
+    margin-top: 60px;
 }
 p {
-    margin: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
-
+.proyectos {
+    margin-top: 60px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+    font-size: 48px;
+    text-align: center; 
+}
 .swiper {
     display: flex;
     justify-content: center;
@@ -35,5 +43,12 @@ p {
     height: auto;
     object-fit: contain;
 }
-
-
+.contentgrid{
+    margin-left: 15%;
+    margin-right: 10%;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Corrección en la definición de columnas */
+    grid-gap: 20px;
+}
